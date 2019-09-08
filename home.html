@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <style>
+    *{
+        font-family: sans-serif;
+    }
+    body {
+        background-color: #00a8ff;
+    }
+    div#div1 {
+        background:  #EA2027;
+        padding: 300px;
+        margin: 10px;
+        border-radius: 10px;
+        position: absolute;
+        left: 180px;
+        margin-top: 20px;
+    }
+    img {
+        position: absolute;
+        cursor: pointer;
+    }
+    
+    img#mario {
+        right: 460px;
+        bottom: 500px;
+    }
+    img#sonic {
+        position: absolute;
+        left: 10px;
+        top: 300px;
+        animation: sonic 4s infinite;
+    }
+    @keyframes sonic {
+        from {
+            left: 10px;
+            top: 300px;
+        }
+        to {
+            left: 400px;
+            top: 200px;
+        }
+    }
+    img#donkey {
+        position: absolute;
+        bottom: 500px;
+    }
+    img#kong {
+        position: absolute;
+        right: 460px;
+        bottom: 350px;
+    }
+    img#pitty {
+        position: absolute;
+        right: 460px;
+        bottom: 200px;
+    }
+    img#krauser {
+        position: absolute;
+        right: 460px;
+        bottom: 50px;
+
+        
+    }
+    img#logo {
+            position: absolute;
+            left: 0px;
+            animation: pikachu 3s infinite;
+        }
+        img#poke1 {
+            position: absolute;
+            bottom: 470px;
+            left: 190px;
+        }
+        img#poke2 {
+            bottom: 340px;
+            left: 200px;
+        }
+        #poke3 {
+            left: 230px;
+            bottom: 170px;
+        }
+        #poke4 {
+            bottom: -10px;
+            left: 190px;
+        }
+        #linl {
+            bottom: 470px;
+            left: 360px;
+        }
+        #megaman {
+            bottom: 317px;
+            left: 440px;
+        }
+        #final1 {
+            left: 440px;
+            bottom: 150px;
+        }
+        #final2{
+            bottom: -12px; 
+            left: 430px;
+        }
+        #personagem {
+            position: absolute;
+            top: 200px;
+            left: 10px;
+            font-size: 20px;
+            opacity: 0;
+            color: white;
+            border: solid;
+            padding: 10px;
+            border-radius: 10px;
+        }
+        #logo2 {
+            position: absolute;
+            left: 800px;
+        }
+        
+
+        
+    </style>
+    <title>Personagens</title>
+    <img src="pokemon/giphy.gif" alt="" id="logo" width="200px">
+    <img src="logo2.png" alt="" id="logo2" width="200px;">
+</head>
+<div><strong id="personagem">Personagem</strong></div>
+<body id="body">
+    <div id="div1">
+        <img src="mario.gif" alt="" width="150px" id="mario" class="kart" onmouseover="mario()" onmouseout="marioout()">
+        <img src="218035a24ed420ec7dcfa4feb20bd9cb_w200.gif" alt="" width="150px" id="kong" onmouseover="donkey()" onmouseout="donkeyout()">
+        <img src="giphy (3).gif" alt="" id="pitty" width="150px" onmouseover="pitty()" onmouseout="pittyout()">
+        <img src="giphy (2).gif" alt="" width="150px" id="krauser" onmouseover="bowser()" onmouseout="bowserout()">
+        <img src="pokemon/ImportantMessyBasil-max-1mb.gif" alt="" id="poke1" width="200px" onmouseover="poke1()" onmouseout="poke1out()">
+        <img src="pokemon/tumblr_mh26ip5Dfj1s3bc1no1_400.gif" alt="" width="160px" id="poke2" onmouseover="entei()" onmouseout="poke2out()">
+        <img src="pokemon/tumblr_n9dzjm0pJC1s3bc1no2_500.gif" alt="" id="poke3" width="160px" onmouseover="poke3()" onmouseout="poke3out()">
+        <img src="pokemon/UnhappyUnrealisticDouglasfirbarkbeetle-max-1mb.gif" alt="" id="poke4" width="260px" onmouseover="poke4()" onmouseout="poke4out()">
+        <img src="zelda/3146644_90x90.gif" alt="" id="linl" width="360px;" onmouseover="link()" onmouseout="linkout()">
+        <img src="final fantasy/tumblr_m7swmmUBpx1qzbqw1o1_500.gif" alt="" width="160px;" id="megaman" onmouseover="mega()" onmouseout="megaout()">
+        <img src="final fantasy/UnsteadyMatureArcticduck-max-1mb.gif" alt="" id="final1" width="190px;" onmouseover="final()" onmouseout="persoout()">
+        <img src="SillyRipeAppaloosa-max-1mb.gif" alt="" width="190px;" id="final2" onmouseover="morte()" onmouseout="donkeyout2()">
+        
+        
+        
+    </div>
+</body>
+<script>
+    var img1 = document.getElementById('mario')
+    var body = document.getElementById('body')
+    var perso = document.getElementById('personagem')
+    function mario(){
+        perso.innerHTML = 'Super Mario';
+        perso.style.opacity = '1';
+        perso.style.transition = '0.4s';
+    }
+    function donkey(){
+        perso.innerHTML = 'Donkey Kong';
+        perso.style.opacity = '1';
+        perso.style.transition = '0.4s';
+    }
+    function pitty(){
+        perso.innerHTML = 'Princesa Peach';
+        perso.style.opacity = '1';
+        perso.style.transition = '0.4s';
+    }
+    function bowser(){
+        perso.innerHTML = 'Bowser';
+        perso.style.opacity = '1';
+        perso.style.transition = '0.4s';
+    }
+    function poke1() {
+        perso.innerHTML = 'Giratina';
+        perso.style.opacity = '1';
+        perso.style.transition = '0.4s';
+    }
+    function entei(){
+        perso.innerHTML = 'Entei';
+        perso.style.opacity = '1';
+        perso.style.transition = '0.4s';
+    }
+    function poke3(){
+        perso.innerHTML = 'Dialga';
+        perso.style.opacity = '1';
+        perso.style.transition = '0.4s';
+    }
+    function poke4(){
+        perso.innerHTML = 'Rayquaza';
+        perso.style.opacity = '1';
+        perso.style.transition = '0.4s';
+    }
+    function link(){
+        perso.innerHTML = 'Link';
+        perso.style.opacity = '1';
+        perso.style.transition = '0.4s';
+    }
+    function mega(){
+        perso.innerHTML = 'Mega Man';
+        perso.style.opacity = '1';
+        perso.style.transition = '0.4s';
+    }
+    function final(){
+        perso.innerHTML = 'Cloud Strife';
+        perso.style.opacity = '1';
+        perso.style.transition = '0.4s';
+    }
+    function morte(){
+        perso.innerHTML = 'Donkey Kong';
+        perso.style.opacity = '1';
+        perso.style.transition = '0.4s';
+    }
+    function marioout(){
+        perso.style.opacity = '0';
+    }
+    function donkeyout(){
+        perso.style.opacity = '0';
+    }
+
+    function pittyout(){
+        perso.style.opacity = '0';
+    }
+
+    function bowserout(){
+        perso.style.opacity = '0';
+    }
+
+    function poke1out(){
+        perso.style.opacity = '0';
+    }
+
+    function poke2out(){
+        perso.style.opacity = '0';
+    }
+
+    function poke3out(){
+        perso.style.opacity = '0';
+    }
+
+    function poke4out(){
+        perso.style.opacity = '0';
+    }
+
+    function linkout(){
+        perso.style.opacity = '0';
+    }
+
+    function megaout(){
+        perso.style.opacity = '0';
+    }
+
+    function persoout(){
+        perso.style.opacity = '0';
+    }
+
+    function donkeyout2(){
+        perso.style.opacity = '0';
+    }
+
+
+
+</script>
+</html>
